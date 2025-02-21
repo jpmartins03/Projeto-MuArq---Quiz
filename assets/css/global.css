@@ -1,0 +1,45 @@
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+
+    /* Fonte Futura XBlkCn BT */
+    @font-face {
+        font-family: "Futura XBlkCn BT";
+        src: url('../fonts/futura\ extra\ black\ font.ttf') format('truetype');
+    }
+
+    /* Fonte Swis721 Cn BT (Tipografia de apoio) */
+    @font-face {
+        font-family: "Swis721 Cn BT";
+        src: url('../fonts/swiss\ 721\ LT\ CN\ BTl.ttf') format('truetype');
+    }
+
+/* Botão de voltar ao início */
+.back-button {
+    width: 100%;
+    padding: 4rem;
+}
+
+/* Fonte para os conteúdos */
+
+    /* Trebuchet MS */
+    @font-face {
+        font-family: "Trebuchet MS";
+        src: url('../fonts/trebuc.ttf') format('truetype');
+    }
+
+/* Desktop */
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+    /* Botão de voltar ao início */
+    .back-button {
+        padding: 1rem;
+    }
+}

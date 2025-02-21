@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- Normalize CSS
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+
+</head>
+<body id="body" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/img/home_photo.png);">
+    <header class="quiz-header">
+        <div class="back-button">
+            <a href="index.html">
+                <button id="back" style="visibility: hidden; text-decoration: none;">
+                    Voltar ao início
+                </button>
+            </a> 
+        </div>
+        <div class="question-number">
+            <span>
+                <!-- Número da questão -->
+            </span>
+        </div>
+    </header>
+    <main id="quiz-container">
+        <audio id="feedback-sound"></audio>
+        <h2 id="question">
+           <!-- A pergunta será inserida aqui dinamicamente -->
+        </h2>
+        <div id="question-picture">
+            <!-- Imagem será gerada dinamicamente -->
+        </div>
+        <ul id="options">
+            <!-- As opções de resposta serão inseridas aqui dinamicamente -->
+        </ul>
+    </main>
+    <!-- <div class="next-question">
+        <button id="next-btn" onclick="nextQuestion()">
+            Próxima
+        </button>
+    </div> -->
+    <div id="result-container" style="display: none;">
+        <h2>Quiz finalizado!</h2>
+        <p id="score"></p>
+        <!-- <button onclick="restartQuiz()">Reiniciar quiz</button> -->
+        <a href="index.html">
+            <button id="back" style="text-decoration: none;">
+                Voltar ao início
+            </button>
+        </a>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="./assets/js/quiz.js"></script>
+
+</body>
+</html>
