@@ -1,12 +1,24 @@
 {
     "name": "MuArq - Quiz",
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "short_name": "MuArq - Quiz",
-    "categories": [
-      "education",
-      "entertainment",
-      "kids"
-    ],
-    "description": "Quiz para testar seus conhecimentos sobre a pré-história de Mato Grosso do Sul."
+    "short_name": "MAQ",
+    "start_url": "index.html",
+    "display": "standalone",
+    "description": "Conhecendo a pré-história do Mato Grosso do Sul",
+    "lang": "pt-BR",
+    "dir": "auto",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "orientation": "any",
+    "icons": [
+      {
+        "src": "assets/img/museu_icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/img/museu_icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
   }
