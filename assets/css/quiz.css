@@ -99,15 +99,21 @@ body {
             box-shadow: 10px 10px black;
             cursor: pointer;
             transition: 0.3s;
-            font-size: 2rem; /* Tamanho maior da fonte */
-            padding: 1.5rem 3rem; /* Aumentar o espaçamento interno */
-            min-width: 80%; /* Largura mínima para evitar quebra de linha */
-            white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-            overflow: hidden; /* Evita que o texto vaze do botão */
-            text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
-            display: inline-block;
-
+            font-size: 3rem;
+            padding: 1.5rem 3rem;
+            min-width: 80%;
+            max-width: 1500px; /* Defina um tamanho máximo de largura (ajuste conforme necessário) */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal;
         }
+        
+        
+        
         #options button:hover {
             filter: brightness(1.2);
         }

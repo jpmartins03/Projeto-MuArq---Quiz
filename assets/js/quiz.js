@@ -229,7 +229,7 @@ function nextQuestion() {
                 bodyEl.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/img/home_photo.png)";
                 endQuiz();
             }
-        }, 500);
+        }, 1500);
 
     }
 }
