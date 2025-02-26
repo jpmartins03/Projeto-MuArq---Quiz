@@ -252,36 +252,41 @@ p {
         object-fit: fill;
     }
     main {
-        margin: 7rem auto;
-        padding: 2rem 6rem 4rem 6rem;
+        margin: 5rem auto;
+        padding: 2rem 4rem;
     }
+
     /* Voltar ao início */
     .back-button {
-        padding: 4rem 0 0 0;
+        padding: 3rem 0 0 0;
     }
     .back-button a {
         text-decoration: none;
     }
     #back {
-        font-size: 1.5rem;
-        box-shadow: 2px 1px black;
-        padding: 1rem 2rem;
-        border-radius: 1.5rem;
-        border: 2px solid black;
+        font-size: 2.5rem;
+        box-shadow: 4px 2px black;
+        padding: 1.5rem 3rem;
+        border-radius: 3rem;
+        border: 3px solid black;
         display: block;
         margin: 0 auto;
     }
     
     /* Conhecendo a Pré-História de Mato Grosso do Sul */
     h1 {
-        font-size: 2.5rem;
+        font-size: 5rem;
         margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 4rem;
     }
     
     /* Descrição do quiz */
     p {
-        font-size: 1.5rem;
-        padding: 0.5rem;
+        font-size: 2.5rem;
+        padding: 2rem;
     }
     
     /* Iniciar o quiz */
@@ -289,13 +294,40 @@ p {
         padding: 3rem 0;
     }
     .start {
-        box-shadow: 7px 3px black;
-        font-size: 2rem;
-        padding: 1rem 2rem;
-        border-radius: 1.5rem;
-        border: 2px solid black;
+        box-shadow: 10px 5px black;
+        font-size: 3.5rem;
+        padding: 2rem 4rem;
+        border-radius: 4rem;
+        border: 3px solid black;
+    }
+
+    /* Ajuste para o quadro */
+    .quadro {
+        width: 85%;
+        max-width: 1200px;
+        height: 60vh;
+        padding: 4rem;
+    }
+
+    .quadro h1 {
+        font-size: 6rem;
+    }
+
+    .quadro h2 {
+        font-size: 4.5rem;
+    }
+
+    .quadro p {
+        font-size: 3rem;
+    }
+
+    .quadro .start {
+        font-size: 3rem;
+        padding: 2.5rem 4rem;
+        border-radius: 5rem;
     }
 }
+
 /* Desktop */
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
     main {

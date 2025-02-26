@@ -278,88 +278,79 @@ body {
         flex-direction: column;
         row-gap: 4rem;
     }
-    /* Header */
 
-    /* UNIVERSIDADE FEDERAL DO MATO GROSSO DO SUL */
+    /* Header */
     header {
-        margin-bottom: 170px;
-        padding: 1rem;
+        margin-bottom: 120px;
+        padding: 1.5rem;
     }
-    #UFMS-DIV {
-        width: 100%;
-    }
+
     #UFMS {
-        font-size: 1.25rem;
+        font-size: 2rem; /* Aumentando a fonte para melhor leitura */
     }
+
     #UFMS-LOGO-DIV {
-        width: 14%;
+        width: 180px;
+        height: 230px;
     }
+
+    #UFMS-LOGO {
+        width: 180px;
+        height: 230px;
+    }
+
     /* Botão - Sobre */
-        #about-button {
-            padding: 0 0.5rem;
-        }
-        #DEVELOPERS {
-            font-size: 1rem;
-            box-shadow: 2px 1px black;
-            padding: 0.5rem 1rem; 
-            border-radius: 1.5rem;
-            border: 2px solid black;
-        }
-    /* Modal Sobre - Background */
-        .modal-content {
-            margin: 50% auto;
-            padding: 1rem; 
-            width: 60%; /* Could be more or less, depending on screen size */
-            text-align: center;
-        }
-        
-        #modal-about {
-            font-size: 1.75rem;
-            margin: 2rem 0;
-        }
-        .devs p {
-            font-size: 1.25rem;
-            margin: 2rem 0;
-        }
-        /* Logo da FACOM e da UFMS no modal */
-        #LOGO-FACOM-UFMS {
-            column-gap: 1rem;
-            padding: 1rem 0;
-        }
-        #LOGO-FACOM-UFMS img {
-            width: 120px;
-            height: 120px;
-        }
-        /* The Close Button */
-        .close {
-            font-size: 2.5rem;
-        }
-        
-    /* Section - Main content */
-        /* Logotipo do Museu da Ciência */
-        #MUSEU-LOGO {
-            width: 100%;
-            margin: 0 auto;
-            display: block;
-        }
+    #about-button {
+        padding: 0.5rem 1rem;
+    }
+
+    #DEVELOPERS {
+        font-size: 1.5rem; 
+        box-shadow: 4px 2px black;
+        padding: 1rem 2rem;  
+        border-radius: 2.5rem;
+    }
+
+    /* Modal */
+    .modal-content {
+        margin: 30% auto;
+        padding: 2rem; 
+        width: 70%; /* Maior aproveitamento da tela do tablet */
+        text-align: center;
+    }
+
+    #modal-about {
+        font-size: 2rem;
+    }
+
+    .devs p {
+        font-size: 1.5rem;
+    }
+
+    #LOGO-FACOM-UFMS img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Logotipo do Museu */
+    #MUSEU-LOGO {
+        width: 70%; /* Melhor aproveitamento da tela */
+    }
 
     /* Footer */
-        footer {
-            padding-right: 0;
-        }
-        /* Botão - Iniciar aventura */
-        #BUTTONS {
-            width: 100%;
-            text-align: center;
-        }
-        .start {
-            padding: 1rem 2rem;
-            border-radius: 1.5rem;
-            box-shadow: 3px 1px black;
-            font-size: 2rem;
-            border: 2px solid black;
-        }
+    #BUTTONS {
+        width: 100%;
+        text-align: center;
+    }
+
+    .start {
+        padding: 1.5rem 3rem;
+        border-radius: 2rem;
+        font-size: 2rem;
+        box-shadow: 4px 2px black;
+    }
 }
+
 /* Desktop */
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
     #UFMS {

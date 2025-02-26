@@ -243,54 +243,88 @@ p {
         border: 2px solid black;
     }
 }
-/* Tablet */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 1301px) and (max-width: 1920px) {
     body {
-        object-fit: fill;
+        width: 100vw;
+        height: 100vh;
+        object-fit: contain;
     }
+
     main {
-        margin: 7rem auto;
-        padding: 2rem 6rem 4rem 6rem;
+        margin: 10vh auto;
+        padding: 3vh 6vw;
     }
+
+    /* Ajuste do Header */
+    header {
+        height: 15vh;
+        padding: 2vw;
+    }
+
     /* Voltar ao início */
     .back-button {
-        padding: 4rem 0 0 0;
-    }
-    .back-button a {
-        text-decoration: none;
+        padding: 2vh 0 0 0;
     }
     #back {
-        font-size: 1.5rem;
-        box-shadow: 2px 1px black;
-        padding: 1rem 2rem;
-        border-radius: 1.5rem;
-        border: 2px solid black;
-        display: block;
-        margin: 0 auto;
+        font-size: 2.5vw;
+        box-shadow: 5px 5px black;
+        padding: 2vh 4vw;
+        border-radius: 3vw;
+        border: 3px solid black;
     }
-    
-    /* Conhecendo a Pré-História de Mato Grosso do Sul */
+
+    /* Títulos */
     h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
+        font-size: 6vw;
+        margin-bottom: 3vh;
     }
-    
-    /* Descrição do quiz */
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    /* Parágrafos */
     p {
-        font-size: 1.5rem;
-        padding: 0.5rem;
+        font-size: 2vw;
+        padding: 2vh;
     }
-    
+
     /* Iniciar o quiz */
     .start-quiz {
-        padding: 3rem 0;
+        padding: 4vh 0;
     }
     .start {
-        box-shadow: 7px 3px black;
-        font-size: 2rem;
-        padding: 1rem 2rem;
-        border-radius: 1.5rem;
-        border: 2px solid black;
+        box-shadow: 10px 5px black;
+        font-size: 3vw;
+        padding: 2vh 4vw;
+        border-radius: 3vw;
+        border: 3px solid black;
+    }
+
+    /* Ajuste do Quadro */
+    .quadro {
+        width: 80vw;
+        max-width: 1400px;
+        height: 60vh;
+        padding: 4vh;
+    }
+
+    .quadro h1 {
+        font-size: 5vw;
+    }
+
+    .quadro h2 {
+        font-size: 4vw;
+    }
+
+    .quadro p {
+        font-size: 3vw;
+    }
+
+    .quadro .start {
+        font-size: 3vw;
+        padding: 2vh 4vw;
+        border-radius: 4vw;
     }
 }
 /* Desktop */
