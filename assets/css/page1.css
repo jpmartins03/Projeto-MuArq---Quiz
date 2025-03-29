@@ -22,6 +22,7 @@ main {
 }
 
 /* Header */
+/* Header */
 header {
     width: 100%;
     height: auto;
@@ -67,10 +68,9 @@ header {
 
 /* Botão Voltar (Movido para dentro do header) */
 .back-button {
-    /* Estilos do botão já definidos anteriormente, podem precisar de ajustes finos aqui */
-    /* Remova a margin-top daqui, pois agora está dentro do header */
+    width: auto; /* Garante que a largura se ajuste ao conteúdo */
+    /* Outros estilos */
 }
-
 #back {
     background-color: #0088B7;
     color: #FFF;
@@ -83,6 +83,7 @@ header {
     border: 2px solid black;
     cursor: pointer;
     transition: 0.3s;
+    /* Adicione estilos para controlar o posicionamento dentro do header, se necessário */
 }
 
 #back:hover{
