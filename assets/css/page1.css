@@ -218,32 +218,84 @@ p {
         flex-direction: column;
         height: auto;
         text-align: center;
-    }
-
-    .header-left {
-        flex-direction: column; /* Empilha logo e título em telas pequenas */
-        align-items: center;
-        margin-bottom: 0.5rem;
+        padding: 0.5rem; /* Reduz o padding do header */
     }
 
     #UFMS-LOGO-DIV {
-        margin: 0 auto;
+        margin: 0 auto 0.3rem; /* Reduz a margem inferior da logo */
     }
 
     #UFMS {
-        font-size: 1.3rem;
-        margin-left: 0; /* Remove a margem para o título ficar centralizado */
+        font-size: 1.1rem; /* Reduz ainda mais a fonte do título */
     }
 
     .back-button {
-        padding-top: 0; /* Remove padding superior */
+        padding-top: 0.5rem; /* Reduz o padding superior do botão */
     }
 
     #back {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Reduz ainda mais a fonte do botão */
+        padding: 0.6rem 1.2rem; /* Reduz o padding do botão */
+        border-radius: 0.8rem; /* Reduz o raio da borda do botão */
+        box-shadow: 1px 1px black; /* Reduz a sombra do botão */
+    }
+
+    .quadro {
+        width: 95%; /* Aumenta um pouco a largura do quadro */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem; /* Reduz o padding interno do quadro */
+        border-radius: 20px; /* Reduz o raio da borda do quadro */
+    }
+
+    .quadro h1 {
+        font-size: 1.8rem; /* Reduz a fonte do título principal */
+        margin-bottom: 0.5rem; /* Reduz a margem inferior do título */
+    }
+
+    .quadro h2 {
+        font-size: 1.6rem; /* Reduz a fonte do subtítulo */
+        margin-bottom: 0.5rem; /* Reduz a margem inferior do subtítulo */
+    }
+
+    .quadro p {
+        font-size: 0.9rem; /* Reduz a fonte do parágrafo */
+        padding: 0.5rem; /* Reduz o padding do parágrafo */
+    }
+
+    .quadro .start {
+        font-size: 1.1rem; /* Reduz a fonte do botão Iniciar Quiz */
+        padding: 0.8rem 1.5rem; /* Reduz o padding do botão Iniciar Quiz */
+        border-radius: 1.5rem; /* Reduz o raio da borda do botão Iniciar Quiz */
+    }
+}
+
+/* Otimização para telas menores que 480px (opcional) */
+@media only screen and (max-width: 480px) {
+    .quadro {
+        width: 100%; /* Ocupa toda a largura em telas muito pequenas */
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0.8rem;
+        border-radius: 15px;
+    }
+
+    .quadro h1 {
+        font-size: 1.6rem;
+    }
+
+    .quadro h2 {
+        font-size: 1.4rem;
+    }
+
+    .quadro p {
+        font-size: 0.8rem;
+    }
+
+    .quadro .start {
+        font-size: 1rem;
         padding: 0.6rem 1.2rem;
-        border-radius: 1rem;
-        box-shadow: 2px 2px black;
+        border-radius: 1.2rem;
     }
 }
 
