@@ -211,85 +211,66 @@ p {
     }
 
     main {
-        padding: 1rem;
+        padding-top: 6rem; /* Adiciona um padding superior para dar espaço à header */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0; /* Remove a margem superior padrão do main */
     }
 
     header {
+        position: fixed; /* Fixa a header no topo da tela */
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.3rem 0.5rem; /* Reduz ainda mais o padding da header */
         flex-direction: column;
-        height: auto;
+        height: auto; /* Permite ajustar a altura ao conteúdo */
         text-align: center;
-        padding: 0.5rem; /* Reduz o padding do header */
     }
 
     #UFMS-LOGO-DIV {
-        margin: 0 auto 0.3rem; /* Reduz a margem inferior da logo */
+        margin: 0 auto 0.2rem; /* Reduz a margem da logo */
     }
 
     #UFMS {
-        font-size: 1.1rem; /* Reduz ainda mais a fonte do título */
+        font-size: 1rem; /* Reduz ainda mais a fonte do título */
     }
 
     .back-button {
-        padding-top: 0.5rem; /* Reduz o padding superior do botão */
+        padding-top: 0.2rem; /* Reduz o padding do botão */
     }
 
     #back {
-        font-size: 0.9rem; /* Reduz ainda mais a fonte do botão */
-        padding: 0.6rem 1.2rem; /* Reduz o padding do botão */
-        border-radius: 0.8rem; /* Reduz o raio da borda do botão */
-        box-shadow: 1px 1px black; /* Reduz a sombra do botão */
+        font-size: 0.8rem; /* Reduz a fonte do botão */
+        padding: 0.4rem 0.8rem; /* Reduz o padding do botão */
+        border-radius: 0.6rem;
+        box-shadow: 1px 1px black;
     }
 
     .quadro {
-        width: 95%; /* Aumenta um pouco a largura do quadro */
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1rem; /* Reduz o padding interno do quadro */
-        border-radius: 20px; /* Reduz o raio da borda do quadro */
-    }
-
-    .quadro h1 {
-        font-size: 1.8rem; /* Reduz a fonte do título principal */
-        margin-bottom: 0.5rem; /* Reduz a margem inferior do título */
-    }
-
-    .quadro h2 {
-        font-size: 1.6rem; /* Reduz a fonte do subtítulo */
-        margin-bottom: 0.5rem; /* Reduz a margem inferior do subtítulo */
-    }
-
-    .quadro p {
-        font-size: 0.9rem; /* Reduz a fonte do parágrafo */
-        padding: 0.5rem; /* Reduz o padding do parágrafo */
-    }
-
-    .quadro .start {
-        font-size: 1.1rem; /* Reduz a fonte do botão Iniciar Quiz */
-        padding: 0.8rem 1.5rem; /* Reduz o padding do botão Iniciar Quiz */
-        border-radius: 1.5rem; /* Reduz o raio da borda do botão Iniciar Quiz */
-    }
-}
-
-/* Otimização para telas menores que 480px (opcional) */
-@media only screen and (max-width: 480px) {
-    .quadro {
-        width: 100%; /* Ocupa toda a largura em telas muito pequenas */
-        margin-left: 0;
-        margin-right: 0;
-        padding: 0.8rem;
-        border-radius: 15px;
+        position: relative; /* Muda para relative para respeitar o fluxo normal do documento */
+        top: auto; /* Remove o posicionamento absoluto */
+        left: auto;
+        transform: none; /* Remove a transformação */
+        width: 95%;
+        margin: 1rem auto; /* Adiciona margem superior e inferior e centraliza */
+        padding: 1rem;
+        border-radius: 20px;
     }
 
     .quadro h1 {
         font-size: 1.6rem;
+        margin-bottom: 0.4rem;
     }
 
     .quadro h2 {
         font-size: 1.4rem;
+        margin-bottom: 0.4rem;
     }
 
     .quadro p {
         font-size: 0.8rem;
+        padding: 0.4rem;
     }
 
     .quadro .start {
