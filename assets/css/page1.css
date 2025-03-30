@@ -211,7 +211,7 @@ p {
     }
 
     main {
-        padding-top: calc(50px + 1rem); /* Supondo que sua header tenha cerca de 50px de altura */
+        padding-top: calc(60px + 1rem); /* Aumentei um pouco o padding-top */
         padding-left: 1rem;
         padding-right: 1rem;
         margin-top: 0;
@@ -248,13 +248,17 @@ p {
         box-shadow: 1px 1px black;
     }
 
+    #title {
+        margin-top: calc(60px + 1.5rem); /* Garante que o título esteja abaixo da header */
+    }
+
     .quadro {
         position: relative;
         top: auto;
         left: auto;
         transform: none;
         width: 95%;
-        margin: 1rem auto;
+        margin: 1.5rem auto; /* Aumentei a margem superior do quadro */
         padding: 0.8rem; /* Reduz um pouco mais o padding interno */
         border-radius: 15px;
     }
