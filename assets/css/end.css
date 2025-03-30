@@ -200,113 +200,412 @@ p {
 }
 
 
-/* Mobile */
+
+/* Samsung LH75W */
+/* Background */
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets-quiz/drive-download-20250120T155620Z-001/qUIZ\ LOGO.png');
+    background-size: cover; /* Alterado para cover para melhor adaptação */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: auto; /* Ajustado para auto para se adaptar ao conteúdo */
+    padding: 1rem 2rem; /* Reduzido o padding para melhor visualização em telas menores */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0088B7;
+    box-shadow: 4px 5px 6px #292929; /* Reduzido o tamanho da sombra */
+}
+
+main {
+    margin: 2.5rem auto; /* Reduzida a margem para melhor visualização em telas menores */
+    padding: 2.5rem; /* Reduzido o padding para melhor visualização em telas menores */
+    max-width: 1300px; /* Mantido o max-width para telas maiores */
+}
+
+/* Voltar ao início */
+#back {
+    background-color: #0088B7;
+    color: #FFF;
+    padding: 0.6rem 1.2rem; /* Ajustado o padding para telas menores */
+    border-radius: 2rem; /* Ajustado o border-radius para telas menores */
+    font-weight: 700;
+    font-size: 0.9rem; /* Ajustado o tamanho da fonte para telas menores */
+    font-family: "Trebuchet MS", sans-serif;
+    box-shadow: 3px 3px black; /* Reduzido o tamanho da sombra */
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content; /* Faz a div ocupar apenas o espaço necessário */
+    height: fit-content;
+}
+
+#back:hover{
+    background-color: #034256;
+    color: white;
+}
+
+#UFMS-DIV {
+    width: auto; /* Ajustado para auto */
+    margin-left: 0.5rem; /* Mantido o espaçamento */
+}
+#UFMS {
+    color: #FFF;
+    font-size: 1.1rem; /* Ajustado o tamanho da fonte para telas menores */
+    font-family: "Futura XBlkCn BT", "Swis721 Cn BT" , sans-serif;
+    text-align: center;
+}
+/* Logotipo da UFMS */
+#UFMS-LOGO-DIV {
+    width: auto; /* Ajustado para auto */
+    height: auto; /* Ajustado para auto */
+    margin-right: 0.9rem; /* Mantido o espaçamento */
+}
+#UFMS-LOGO{
+    max-width: 90px; /* Ajustado o max-width para telas menores */
+    height: auto;
+}
+
+/* Conhecendo a Pré-História de Mato Grosso do Sul */
+#title {
+    margin-top: 2.5rem; /* Reduzida a margem para melhor visualização em telas menores */
+    text-align: center;
+}
+h1 {
+    color: #FFF;
+    font-size: 3rem; /* Ajustado o tamanho da fonte para telas menores */
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+h2 {
+    color: #FFF;
+    font-size: 2.5rem; /* Ajustado o tamanho da fonte para telas menores */
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Descrição do quiz */
+#description {
+    text-align: center;
+}
+p {
+    color: #FFF;
+    font-size: 1.2rem; /* Ajustado o tamanho da fonte para telas menores */
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: 500;
+    padding: 1.2rem; /* Ajustado o padding para telas menores */
+}
+
+/* Iniciar o quiz */
+.start-quiz {
+    text-align: center;
+}
+.start-quiz a {
+    text-decoration: none;
+}
+
+.start {
+    margin-top: 2.5rem; /* Reduzida a margem para melhor visualização em telas menores */
+    background-color: #0088B7;
+    color: #FFF;
+    padding: 1rem 2rem; /* Ajustado o padding para telas menores */
+    border-radius: 2rem; /* Ajustado o border-radius para telas menores */
+    font-weight: 700;
+    box-shadow: 4px 4px black; /* Reduzido o tamanho da sombra */
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.5rem; /* Ajustado o tamanho da fonte para telas menores */
+    cursor: pointer;
+}
+
+.start:hover{
+    background-color: #034256;
+    color: white;
+}
+
+.quadro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 700px;
+    height: auto; /* Ajustado para auto para se adaptar ao conteúdo */
+    padding: 2rem; /* Ajustado o padding para telas menores */
+    background-color: #704025;
+    border-radius: 45px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7); /* Reduzido o tamanho da sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Ajuste para o texto dentro do quadro */
+.quadro h1 {
+    color: #ffffff;
+    font-size: 2.5rem; /* Ajustado o tamanho da fonte para telas menores */
+    margin-bottom: 0.9rem;
+}
+
+.quadro h2 {
+    color: #ffffff;
+    font-size: 2.1rem; /* Ajustado o tamanho da fonte para telas menores */
+    margin-bottom: 0.9rem;
+}
+
+.quadro p {
+    color: #FFF;
+    font-size: 1.2rem; /* Ajustado o tamanho da fonte para telas menores */
+    margin-bottom: 1.35rem;
+}
+
+/* Ajuste para o botão dentro do quadro */
+.quadro .start {
+    padding: 1.5rem 3rem; /* Ajustado o padding para telas menores */
+    border-radius: 2.625rem; /* Ajustado o border-radius para telas menores */
+    font-size: 1.6rem; /* Ajustado o tamanho da fonte para telas menores */
+    box-shadow: 4px 4px black; /* Reduzido o tamanho da sombra */
+    border: 3px solid black;
+}
+
+.quadro .start:hover {
+    background-color: #00d049
+}
+
+/* Media Queries para Responsividade */
+
+/* Celulares (largura máxima de 768px) */
 @media only screen and (max-width: 768px) {
     body {
-        object-fit: fill;
+        background-size: cover;
     }
+
     main {
-        margin: 0 auto;
-        padding: 2rem 4rem 1rem 4rem;
+        padding-top: 5rem; /* Ajustado o padding superior */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0;
     }
-    /* Voltar ao início */
-    .back-button {
-        padding: 4rem 0 0 0;
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem; /* Reduzido o padding da header */
+        flex-direction: column;
+        height: auto;
+        text-align: center;
     }
-    .back-button a {
-        text-decoration: none;
+
+    #UFMS-LOGO-DIV {
+        margin: 0 auto 0.2rem;
     }
-    #back {
+
+    #UFMS {
         font-size: 1rem;
-        box-shadow: 2px 1px black;
+    }
+
+    .back-button {
+        padding-top: 0.2rem;
+    }
+
+    #back {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 0.6rem;
+        box-shadow: 1px 1px black;
+    }
+
+    .quadro {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 95%;
+        margin: 1rem auto;
         padding: 1rem;
-        border-radius: 1.5rem;
-        border: 2px solid black;
-        display: block;
-        margin: 0 auto;
+        border-radius: 20px;
     }
-    
-    /* Conhecendo a Pré-História de Mato Grosso do Sul */
-    h1 {
-        font-size: 2rem;
+
+    .quadro h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
     }
-    
-    /* Descrição do quiz */
-    p {
-        font-size: 1.25rem;
-        padding: 0.5rem;
+
+    .quadro h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
     }
-    
-    /* Iniciar o quiz */
-    .start {
-        box-shadow: 7px 3px black;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-        border-radius: 5rem;
-        border: 2px solid black;
+
+    .quadro p {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    .quadro .start {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 1.2rem;
     }
 }
-/* Tablet */
+
+/* Tablets (largura entre 769px e 1024px) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        object-fit: fill;
-    }
     main {
-        margin: 5rem auto;
-        padding: 2rem 4rem;
-    }
-
-    /* Voltar ao início */
-    .back-button {
-        padding: 3rem 0 0 0;
-    }
-    .back-button a {
-        text-decoration: none;
-    }
-    #back {
-        font-size: 2.5rem;
-        box-shadow: 4px 2px black;
-        padding: 1.5rem 3rem;
-        border-radius: 3rem;
-        border: 3px solid black;
-        display: block;
-        margin: 0 auto;
-    }
-    
-    /* Conhecendo a Pré-História de Mato Grosso do Sul */
-    h1 {
-        font-size: 5rem;
-        margin-bottom: 2rem;
-    }
-
-    h2 {
-        font-size: 4rem;
-    }
-    
-    /* Descrição do quiz */
-    p {
-        font-size: 2.5rem;
         padding: 2rem;
     }
-    
-    /* Iniciar o quiz */
-    .start-quiz {
-        padding: 3rem 0;
-    }
-    .start {
-        box-shadow: 10px 5px black;
-        font-size: 3.5rem;
-        padding: 2rem 4rem;
-        border-radius: 4rem;
-        border: 3px solid black;
+
+    header {
+        padding: 0.8rem 1.6rem;
     }
 
-    /* Ajuste para o quadro */
+    #UFMS {
+        font-size: 1.4rem;
+    }
+
+    #title h1 {
+        font-size: 3.5rem;
+    }
+
+    #description p {
+        font-size: 1.1rem;
+        padding: 1.2rem;
+    }
+
+    .start {
+        font-size: 2rem;
+        padding: 1.2rem 2.5rem;
+    }
+
     .quadro {
-        width: 85%;
-        max-width: 1200px;
-        height: 60vh;
+        padding: 2.5rem;
+        border-radius: 50px;
+    }
+
+    .quadro h1 {
+        font-size: 3.5rem;
+    }
+
+    .quadro h2 {
+        font-size: 3rem;
+    }
+
+    .quadro p {
+        font-size: 1.3rem;
+    }
+
+    .quadro .start {
+        font-size: 1.8rem;
+        padding: 1.2rem 2.5rem;
+    }
+
+    .back-button {
+        padding-top: 0;
+    }
+
+    #back {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 1.5rem;
+        box-shadow: 2px 2px black;
+    }
+}
+
+/* Notebooks (largura entre 1025px e 1920px) - Título alinhado à esquerda */
+@media only screen and (min-width: 1025px) and (max-width: 1920px) {
+    main {
+        padding: 2.5rem;
+    }
+
+    header {
+        padding: 0.6rem 1.2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    #UFMS-DIV {
+        margin-left: 0.5rem;
+    }
+
+    #UFMS {
+        font-size: 1.1rem;
+    }
+
+    #UFMS-LOGO-DIV {
+        margin-right: 0.9rem;
+    }
+
+    #UFMS-LOGO{
+        max-width: 90px;
+    }
+
+    .back-button {
+        /* Estilos do botão para notebook */
+    }
+
+    #back {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+        border-radius: 2rem;
+        box-shadow: 3px 3px black;
+    }
+}
+
+/* Desktops Maiores (largura acima de 1920px) */
+@media only screen and (min-width: 1921px) {
+    main {
         padding: 4rem;
+    }
+
+    header {
+        padding: 2rem 4rem;
+    }
+
+    #UFMS {
+        font-size: 3rem;
+    }
+
+    #title h1 {
+        font-size: 6rem;
+    }
+
+    #description p {
+        font-size: 1.8rem;
+        padding: 3rem;
+    }
+
+    .start {
+        font-size: 3.5rem;
+        padding: 2.5rem 5rem;
+    }
+
+    .quadro {
+        padding: 5rem;
+        border-radius: 100px;
     }
 
     .quadro h1 {
@@ -314,52 +613,26 @@ p {
     }
 
     .quadro h2 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
     }
 
     .quadro p {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     .quadro .start {
         font-size: 3rem;
-        padding: 2.5rem 4rem;
-        border-radius: 5rem;
+        padding: 2.5rem 5rem;
     }
-}
 
-/* Desktop */
-@media only screen and (min-width: 1025px) and (max-width: 1300px) {
-    main {
-        margin: 1rem auto;
-        padding: 1rem;
+    .back-button {
+        padding-top: 4rem;
     }
-    /* Voltar ao início */
+
     #back {
-        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        padding: 2rem 4rem;
         border-radius: 3rem;
-        font-size: 1rem;
-        box-shadow: 4px 4px black;
+        box-shadow: 5px 5px black;
     }
-    
-    /* Conhecendo a Pré-História de Mato Grosso do Sul */
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    /* Descrição do quiz */
-    p {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-    
-    /* Iniciar o quiz */
-    .start {
-        padding: 1rem 2rem;
-        border-radius: 3rem;
-        box-shadow: 4px 4px black;
-        font-size: 1.25rem;
-        border: 3px solid black;
-    }
-
 }
