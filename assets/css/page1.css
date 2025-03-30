@@ -1,358 +1,83 @@
-/* Estilos Globais e Reset (Opcional, mas recomendado) */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* Celulares (largura máxima de 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
 
-body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets-quiz/drive-download-20250120T155620Z-001/qUIZ LOGO.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-main {
-    margin: 2.5rem auto;
-    padding: 2.5rem;
-    max-width: 1300px;
-}
-
-/* Header */
-/* Header */
-header {
-    width: 100%;
-    height: auto;
-    padding: 0.3rem 0.5rem; /* Reduzi o padding da header para celulares */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centraliza verticalmente o conteúdo da header */
-    align-items: center; /* Centraliza horizontalmente o conteúdo da header */
-    background-color: #0088B7;
-    box-shadow: 4px 5px 6px #292929;
-}
-
-/* Grupo Esquerda (Logo e Título) */
-.header-left {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.2rem; /* Adicionei margem inferior para separar logo/título do botão */
-}
-
-#UFMS-DIV {
-    width: auto;
-    margin-left: 0.5rem; /* Mantém o espaço entre a logo e o título */
-}
-
-#UFMS {
-    color: #FFF;
-    font-size: 0.9rem; /* Reduz ainda mais se necessário */
-    font-family: "Futura XBlkCn BT", "Swis721 Cn BT" , sans-serif;
-    text-align: center;
-}
-
-/* Logotipo da UFMS */
-#UFMS-LOGO-DIV {
-    width: auto;
-    height: auto;
-    margin-right: 0.9rem;
-}
-
-#UFMS-LOGO{
-    max-width: 70px; /* Reduzi o tamanho da logo para celulares */
-    height: auto;
-    display: block;
-}
-
-/* Botão Voltar (Movido para dentro do header) */
-.back-button {
-    width: auto; /* Garante que a largura se ajuste ao conteúdo */
-    /* Outros estilos */
-}
-#back {
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 0.3rem 0.6rem; /* Reduzi o padding do botão */
-    border-radius: 0.5rem;
-    font-weight: 700;
-    font-size: 0.7rem; /* Reduzi a fonte do botão */
-    font-family: "Trebuchet MS", sans-serif;
-    box-shadow: 1px 1px black;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: 0.3s;
-    /* Adicione estilos para controlar o posicionamento dentro do header, se necessário */
-}
-
-#back:hover{
-    background-color: #034256;
-    color: white;
-}
-
-/* Conhecendo a Pré-História de Mato Grosso do Sul */
-#title {
-    margin-top: calc(60px + 1.5rem); /* Mantendo a margem para o título */
-    text-align: center;
-}
-
-h1 {
-    color: #FFF;
-    font-size: 3rem;
-    font-family: "Trebuchet MS", sans-serif;
-}
-
-h2 {
-    color: #FFF;
-    font-size: 2.5rem;
-    font-family: "Trebuchet MS", sans-serif;
-}
-
-/* Descrição do quiz */
-#description {
-    text-align: center;
-}
-
-p {
-    color: #FFF;
-    font-size: 1.2rem;
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: 500;
-    padding: 1.2rem;
-}
-
-/* Iniciar o quiz */
-.start-quiz {
-    text-align: center;
-    margin-top: 2.5rem;
-}
-
-.start-quiz a {
-    text-decoration: none;
-}
-
-.start {
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    font-weight: 700;
-    box-shadow: 4px 4px black;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: 2px solid black;
-}
-
-.start:hover{
-    background-color: #034256;
-    color: white;
-}
-
-.quadro {
-    position: relative; /* Mantém como relative */
-    top: auto;
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translateX(-50%); /* Ajusta o deslocamento para centralizar */
-    width: 90%; /* Reduzi a largura do quadro para deixar mais espaço nas laterais */
-    max-width: 500px; /* Adicionei uma largura máxima para evitar que fique muito largo em telas maiores */
-    margin-top: calc(60px + 2rem); /* Mantendo a margem superior */
-    margin-bottom: 1rem;
-    padding: 0.8rem; /* Reduz um pouco mais o padding interno */
-    border-radius: 15px;
-    box-sizing: border-box; /* Garante que padding não aumente a largura total */
-}
-
-.quadro h1 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-}
-
-.quadro h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-}
-
-.quadro p {
-    font-size: 0.7rem;
-    padding: 0.3rem;
-}
-
-.quadro .start {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    border-radius: 1rem;
-}
-
-/* Tablets (largura entre 769px e 1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
     main {
-        padding: 2rem;
+        padding-top: calc(60px + 1rem); /* Mantendo o padding-top para o conteúdo geral */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: 0;
     }
 
     header {
-        padding: 0.8rem 1.6rem;
-    }
-
-    #UFMS {
-        font-size: 1.6rem;
-    }
-
-    #title h1 {
-        font-size: 4rem;
-    }
-
-    #description p {
-        font-size: 1.2rem;
-        padding: 1.5rem;
-    }
-
-    .start {
-        font-size: 2.5rem;
-        padding: 1.5rem 3rem;
-    }
-
-    .quadro {
-        padding: 3rem;
-        border-radius: 60px;
-    }
-
-    .quadro h1 {
-        font-size: 4rem;
-    }
-
-    .quadro h2 {
-        font-size: 3.5rem;
-    }
-
-    .quadro p {
-        font-size: 1.5rem;
-    }
-
-    .quadro .start {
-        font-size: 2rem;
-        padding: 1.5rem 3rem;
-    }
-
-    .back-button {
-        padding-top: 0; /* Remove padding superior */
-    }
-
-    #back {
-        font-size: 1.2rem;
-        padding: 0.8rem 1.6rem;
-        border-radius: 2rem;
-        box-shadow: 3px 3px black;
-    }
-}
-
-/* Notebooks (largura entre 1025px e 1920px) - Título alinhado à esquerda */
-@media only screen and (min-width: 1025px) and (max-width: 1920px) {
-    main {
-        padding: 2.5rem;
-    }
-
-    header {
-        padding: 0.6rem 1.2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; /* Mantém o botão à direita */
-        align-items: center;
-    }
-
-    .header-left {
-        display: flex;
-        align-items: center;
-    }
-
-    #UFMS-DIV {
-        margin-left: 0.5rem;
-    }
-
-    #UFMS {
-        font-size: 1.1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0.3rem 0.5rem;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        justify-content: center; /* Centraliza verticalmente o conteúdo da header */
     }
 
     #UFMS-LOGO-DIV {
-        margin-right: 0.9rem;
-    }
-
-    #UFMS-LOGO{
-        max-width: 90px;
-    }
-
-    .back-button {
-        /* Estilos do botão para notebook */
-    }
-
-    #back {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-        border-radius: 2rem;
-        box-shadow: 3px 3px black;
-    }
-}
-
-/* Desktops Maiores (largura acima de 1920px) */
-@media only screen and (min-width: 1921px) {
-    main {
-        padding: 4rem;
-    }
-
-    header {
-        padding: 2rem 4rem;
+        margin: 0 auto 0.2rem;
     }
 
     #UFMS {
-        font-size: 3rem;
-    }
-
-    #title h1 {
-        font-size: 6rem;
-    }
-
-    #description p {
-        font-size: 1.8rem;
-        padding: 3rem;
-    }
-
-    .start {
-        font-size: 3.5rem;
-        padding: 2.5rem 5rem;
-    }
-
-    .quadro {
-        padding: 5rem;
-        border-radius: 100px;
-    }
-
-    .quadro h1 {
-        font-size: 6rem;
-    }
-
-    .quadro h2 {
-        font-size: 5.5rem;
-    }
-
-    .quadro p {
-        font-size: 2.2rem;
-    }
-
-    .quadro .start {
-        font-size: 3rem;
-        padding: 2.5rem 5rem;
+        font-size: 0.9rem; /* Reduz ainda mais se necessário */
     }
 
     .back-button {
-        padding-top: 4rem;
+        padding-top: 0.2rem;
     }
 
     #back {
-        font-size: 2.5rem;
-        padding: 2rem 4rem;
-        border-radius: 3rem;
-        box-shadow: 5px 5px black;
+        font-size: 0.7rem; /* Reduz ainda mais se necessário */
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px black;
+    }
+
+    #title {
+        margin-top: calc(60px + 1.5rem); /* Mantendo a margem para o título */
+    }
+
+    .quadro {
+        position: relative; /* Mantém como relative */
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 95%;
+        margin-top: calc(60px + 2rem); /* Adicionando margem superior para empurrar abaixo do header */
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.8rem; /* Reduz um pouco mais o padding interno */
+        border-radius: 15px;
+    }
+
+    .quadro h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .quadro h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .quadro p {
+        font-size: 0.7rem;
+        padding: 0.3rem;
+    }
+
+    .quadro .start {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
     }
 }
