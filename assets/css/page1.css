@@ -211,7 +211,7 @@ p {
     }
 
     main {
-        padding-top: calc(60px + 1rem); /* Aumentei um pouco o padding-top */
+        padding-top: calc(60px + 1rem); /* Mantendo o padding-top para o conteúdo geral */
         padding-left: 1rem;
         padding-right: 1rem;
         margin-top: 0;
@@ -249,16 +249,19 @@ p {
     }
 
     #title {
-        margin-top: calc(60px + 1.5rem); /* Garante que o título esteja abaixo da header */
+        margin-top: calc(60px + 1.5rem); /* Mantendo a margem para o título */
     }
 
     .quadro {
-        position: relative;
+        position: relative; /* Mantém como relative */
         top: auto;
         left: auto;
         transform: none;
         width: 95%;
-        margin: 1.5rem auto; /* Aumentei a margem superior do quadro */
+        margin-top: calc(60px + 2rem); /* Adicionando margem superior para empurrar abaixo do header */
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0.8rem; /* Reduz um pouco mais o padding interno */
         border-radius: 15px;
     }
