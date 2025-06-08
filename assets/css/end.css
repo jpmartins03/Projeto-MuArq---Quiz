@@ -1,638 +1,336 @@
 /* Samsung LH75W */
 /* Background */
-
 body {
-    overflow-x: hidden;
-}
- /* Header */
- header {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0088B7;
-    box-shadow: 8px 10px 12px #292929;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets-quiz/drive-download-20250120T155620Z-001/qUIZ\ LOGO.png');
-    background-size:100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets-quiz/drive-download-20250120T155620Z-001/qUIZ LOGO.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 main {
-    margin: 8rem auto;
-    padding: 6rem;
-}
-/* Voltar ao início */
-#back {
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 2rem 5rem;
-    border-radius: 6rem;
-    font-weight: 700;
-    font-size: 3.5rem;
-    font-family: "Trebuchet MS", sans-serif;
-    box-shadow: 10px 10px black;
-    border: 3px solid black;
-    cursor: pointer;
-    transition: 0.3s;
-
-}
-
-.back-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content; /* Faz a div ocupar apenas o espaço necessário */
-    height: fit-content;
-
-
-}
-
-#back:hover{
-    background-color: #034256;
-    color: white;
-}
-
-
-
-
-#UFMS-DIV {
-    width: 100%;
-}
-#UFMS {
-    color: #FFF;
-    font-size: 5rem;
-    font-family: "Futura XBlkCn BT", "Swis721 Cn BT" , sans-serif;
-    text-align: center;
-}
-/* Logotipo da UFMS */
-#UFMS-LOGO-DIV {
-    width: 200px;
-    height: 250px;
-    margin-right: 90px;
-}
-#UFMS-LOGO{
-    width: 300px;
-    height: 270px;
-}
-
-
-/* Conhecendo a Pré-História de Mato Grosso do Sul */
-#title {
-    margin-top: 500px;
-    text-align: center;
-}
-h1 {
-    color: #FFF;
-    font-size: 8rem;
-    font-family: "Trebuchet MS", sans-serif;
-}
-
-h2 {
-    color: #FFF;
-    font-size: 7rem;
-    font-family: "Trebuchet MS", sans-serif;
-}
-
-/* Descrição do quiz */
-#description {
-    text-align: center;
-}
-p {
-    color: #FFF;
-    font-size: 2rem;
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: 500;
-    padding: 5rem;
-}
-
-/* Iniciar o quiz */
-.start-quiz {
-    text-align: center;
-}
-.start-quiz a {
-    text-decoration: none;
-}
-
-.start {
-    margin-top: 10rem;
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 3rem 5rem;
-    border-radius: 55px;
-    font-weight: 700;
-    box-shadow: 15px 15px black;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 5.5rem;
-    cursor: pointer;
-    
-}
-
-.start:hover{
-    background-color: #034256;
-    color: white;
-}
-
-.quadro {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 90%; /* O quadro ocupa quase toda a largura */
-    max-width: 3000px; /* Mais largo em telas grandes */
-    height: 70vh; /* O quadro ocupa 70% da altura da tela */
-    padding: 6rem; /* Maior espaçamento interno */
-
-    background-color: #704025;
-    border-radius: 100px;
-    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.7);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Ajuste para o texto */
-.quadro h1 {
-    color: #ffffff;
-    font-size: 8rem; /* Texto bem grande */
-    margin-bottom: 3rem;
-}
-
-.quadro h2 {
-    color: #ffffff;
-    font-size: 6rem; /* Texto bem grande */
-    margin-bottom: 3rem;
-}
-
-.quadro p {
-    color: #FFF;
-    font-size: 4rem; /* Texto bem grande */
-    margin-bottom: 4rem;
-}
-
-/* Ajuste para o botão */
-.quadro .start {
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 3rem 6rem; /* Botão bem maior */
-    border-radius: 6rem;
-    font-size: 4rem; /* Texto do botão maior */
-    font-weight: bold;
-    box-shadow: 10px 10px black;
-    border: 4px solid black;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.quadro .start:hover {
-    background-color: #00d049
-}
-
-
-
-/* Samsung LH75W */
-/* Background */
-
-body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets-quiz/drive-download-20250120T155620Z-001/qUIZ\ LOGO.png');
-    background-size: cover; /* Alterado para cover para melhor adaptação */
-    background-repeat: no-repeat;
-    background-position: center;
+  font-family: "Futura XBlkCn BT", "Swis721 Cn BT", sans-serif;
+  font-size: small;
+  margin: 4rem auto; /* Diminuída a margem superior */
+  padding: 2rem; /* Diminuído o padding */
+  max-width: 1000px; /* Reduzido o max-width para o main */
+  display: center; /* Adicionado display flex para main para ajudar no posicionamento do quadro */
+  justify-content: center; /* Centraliza o conteúdo */
+  align-items: center; /* Centraliza o conteúdo */
+  min-height: calc(100vh - 150px); /* Ajusta altura para considerar o header */
 }
 
 /* Header */
 header {
-    width: 100%;
-    height: auto; /* Ajustado para auto para se adaptar ao conteúdo */
-    padding: 1rem 2rem; /* Reduzido o padding para melhor visualização em telas menores */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0088B7;
-    box-shadow: 4px 5px 6px #292929; /* Reduzido o tamanho da sombra */
-}
-
-main {
-    margin: 2.5rem auto; /* Reduzida a margem para melhor visualização em telas menores */
-    padding: 2.5rem; /* Reduzido o padding para melhor visualização em telas menores */
-    max-width: 1300px; /* Mantido o max-width para telas maiores */
-}
-
-/* Voltar ao início */
-#back {
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 0.6rem 1.2rem; /* Ajustado o padding para telas menores */
-    border-radius: 2rem; /* Ajustado o border-radius para telas menores */
-    font-weight: 700;
-    font-size: 0.9rem; /* Ajustado o tamanho da fonte para telas menores */
-    font-family: "Trebuchet MS", sans-serif;
-    box-shadow: 3px 3px black; /* Reduzido o tamanho da sombra */
-    border: 2px solid black;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.back-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content; /* Faz a div ocupar apenas o espaço necessário */
-    height: fit-content;
-}
-
-#back:hover{
-    background-color: #034256;
-    color: white;
+  width: 100%;
+  height: auto;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Mantém o espaçamento entre os grupos */
+  align-items: center;
+  background-color: #0088b7;
+  box-shadow: 4px 5px 6px #292929;
 }
 
 #UFMS-DIV {
-    width: auto; /* Ajustado para auto */
-    margin-left: 0.5rem; /* Mantido o espaçamento */
+  width: auto;
+  margin-left: 0.5rem; /* Mantém o espaço entre a logo e o título */
 }
+
 #UFMS {
-    color: #FFF;
-    font-size: 1.1rem; /* Ajustado o tamanho da fonte para telas menores */
-    font-family: "Futura XBlkCn BT", "Swis721 Cn BT" , sans-serif;
-    text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Futura XBlkCn BT", "Swis721 Cn BT", sans-serif;
+  text-align: center;
 }
-/* Logotipo da UFMS */
+
 #UFMS-LOGO-DIV {
-    width: auto; /* Ajustado para auto */
-    height: auto; /* Ajustado para auto */
-    margin-right: 0.9rem; /* Mantido o espaçamento */
-}
-#UFMS-LOGO{
-    max-width: 90px; /* Ajustado o max-width para telas menores */
-    height: auto;
+  width: auto;
+  height: auto;
+  margin-right: 0.9rem;
 }
 
-/* Conhecendo a Pré-História de Mato Grosso do Sul */
-#title {
-    margin-top: 2.5rem; /* Reduzida a margem para melhor visualização em telas menores */
-    text-align: center;
-}
-h1 {
-    color: #FFF;
-    font-size: 3rem; /* Ajustado o tamanho da fonte para telas menores */
-    font-family: "Trebuchet MS", sans-serif;
+#UFMS-LOGO {
+  max-width: 90px;
+  height: auto;
+  display: block;
 }
 
-h2 {
-    color: #FFF;
-    font-size: 2.5rem; /* Ajustado o tamanho da fonte para telas menores */
-    font-family: "Trebuchet MS", sans-serif;
+.back-button {
+  width: auto;
+}
+#back {
+  background-color: #0088b7;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", sans-serif;
+  box-shadow: 3px 3px black;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Descrição do quiz */
-#description {
-    text-align: center;
-}
-p {
-    color: #FFF;
-    font-size: 1.2rem; /* Ajustado o tamanho da fonte para telas menores */
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: 500;
-    padding: 1.2rem; /* Ajustado o padding para telas menores */
+#back:hover {
+  background-color: #034256;
+  color: white;
 }
 
-/* Iniciar o quiz */
-.start-quiz {
-    text-align: center;
-}
-.start-quiz a {
-    text-decoration: none;
-}
-
-.start {
-    margin-top: 2.5rem; /* Reduzida a margem para melhor visualização em telas menores */
-    background-color: #0088B7;
-    color: #FFF;
-    padding: 1rem 2rem; /* Ajustado o padding para telas menores */
-    border-radius: 2rem; /* Ajustado o border-radius para telas menores */
-    font-weight: 700;
-    box-shadow: 4px 4px black; /* Reduzido o tamanho da sombra */
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 1.5rem; /* Ajustado o tamanho da fonte para telas menores */
-    cursor: pointer;
-}
-
-.start:hover{
-    background-color: #034256;
-    color: white;
-}
-
+/* Quadro Central */
 .quadro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 700px;
-    height: auto; /* Ajustado para auto para se adaptar ao conteúdo */
-    padding: 2rem; /* Ajustado o padding para telas menores */
-    background-color: #704025;
-    border-radius: 45px;
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.7); /* Reduzido o tamanho da sombra */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  opacity: 100%;
+  position: relative; /* Mudado para relative para facilitar o fluxo normal do documento */
+  top: auto; /* Removido top/left/transform quando position é relative */
+  left: auto;
+  transform: none;
+
+  width: 80%; /* Reduzido a largura do quadro */
+  max-width: 800px; /* Reduzido o max-width do quadro */
+  height: auto; /* Altura se adapta ao conteúdo */
+  padding: 2.5rem; /* Diminuído o espaçamento interno */
+
+  background-color: #704025;
+  border-radius: 60px; /* Diminuído o border-radius */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7); /* Diminuído a sombra */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto; /* Centraliza o quadro */
 }
 
 /* Ajuste para o texto dentro do quadro */
 .quadro h1 {
-    color: #ffffff;
-    font-size: 2.5rem; /* Ajustado o tamanho da fonte para telas menores */
-    margin-bottom: 0.9rem;
+  color: #ffffff;
+  font-size: 2rem; /* Diminuído o tamanho da fonte */
+  margin-bottom: 1.5rem; /* Diminuída a margem */
 }
 
 .quadro h2 {
-    color: #ffffff;
-    font-size: 2.1rem; /* Ajustado o tamanho da fonte para telas menores */
-    margin-bottom: 0.9rem;
+  color: #ffffff;
+  font-size: 1.5rem; /* Diminuído o tamanho da fonte */
+  margin-bottom: 1.5rem; /* Diminuída a margem */
 }
 
 .quadro p {
-    color: #FFF;
-    font-size: 1.2rem; /* Ajustado o tamanho da fonte para telas menores */
-    margin-bottom: 1.35rem;
+  /* Esta regra pode ser para outros p's na página, mas se refere ao quadro p */
+  color: #fff;
+  font-size: 1.2rem; /* Diminuído o tamanho da fonte */
+  padding: 0 1rem; /* Diminuído o padding */
+  margin-bottom: 2rem; /* Diminuída a margem */
 }
 
 /* Ajuste para o botão dentro do quadro */
 .quadro .start {
-    padding: 1.5rem 3rem; /* Ajustado o padding para telas menores */
-    border-radius: 2.625rem; /* Ajustado o border-radius para telas menores */
-    font-size: 1.6rem; /* Ajustado o tamanho da fonte para telas menores */
-    box-shadow: 4px 4px black; /* Reduzido o tamanho da sombra */
-    border: 3px solid black;
+  opacity: 100%;
+  background-color: #0088b7;
+  color: #fff;
+  padding: 1.5rem 3rem; /* Diminuído o padding */
+  border-radius: 2.5rem; /* Diminuído o border-radius */
+  font-size: 1.2rem; /* Diminuído o tamanho da fonte */
+  font-weight: bold;
+  box-shadow: 6px 6px black; /* Diminuído a sombra */
+  border: 3px solid black;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .quadro .start:hover {
-    background-color: #00d049
+  background-color: #00d049;
 }
 
 /* Media Queries para Responsividade */
 
 /* Celulares (largura máxima de 768px) */
 @media only screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-    }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  #UFMS-LOGO-DIV {
+    margin: 0 auto 0.2rem;
+  }
+  #UFMS {
+    font-size: 0.9rem;
+  }
+  .back-button {
+    padding-top: 0.2rem;
+  }
+  #back {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px black;
+  }
 
-    main {
-        padding-top: 5rem; /* Ajustado o padding superior */
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-top: 0;
-    }
+  main {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 0.5rem; /* Reduzido o padding da header */
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-    }
+  .quadro {
+    width: 95%;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: calc(60px + 2rem); /* Adjusted for fixed header */
+  }
 
-    #UFMS-LOGO-DIV {
-        margin: 0 auto 0.2rem;
-    }
+  .quadro h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
 
-    #UFMS {
-        font-size: 1rem;
-    }
+  .quadro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 
-    .back-button {
-        padding-top: 0.2rem;
-    }
+  .quadro p {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
 
-    #back {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-        border-radius: 0.6rem;
-        box-shadow: 1px 1px black;
-    }
-
-    .quadro {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: 95%;
-        margin: 1rem auto;
-        padding: 1rem;
-        border-radius: 20px;
-    }
-
-    .quadro h1 {
-        font-size: 1.6rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .quadro h2 {
-        font-size: 1.4rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .quadro p {
-        font-size: 0.8rem;
-        padding: 0.4rem;
-    }
-
-    .quadro .start {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-        border-radius: 1.2rem;
-    }
+  .quadro .start {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 1.5rem;
+  }
 }
 
 /* Tablets (largura entre 769px e 1024px) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    main {
-        padding: 2rem;
-    }
+  header {
+    padding: 0.8rem 1.6rem;
+  }
+  #UFMS {
+    font-size: 1.6rem;
+  }
+  #UFMS-LOGO-DIV {
+    width: auto;
+    min-width: auto;
+    max-width: auto;
+  }
+  #UFMS-LOGO {
+    max-width: 90px;
+  }
+  .back-button {
+    padding-top: 0;
+  }
+  #back {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    box-shadow: 3px 3px black;
+  }
 
-    header {
-        padding: 0.8rem 1.6rem;
-    }
+  main {
+    padding: 1.5rem;
+  }
 
-    #UFMS {
-        font-size: 1.4rem;
-    }
+  .quadro {
+    width: 85%;
+    padding: 2rem;
+    border-radius: 40px;
+    margin-top: calc(60px + 2rem); /* Adjusted for fixed header */
+  }
 
-    #title h1 {
-        font-size: 3.5rem;
-    }
+  .quadro h1 {
+    font-size: 2.5rem;
+  }
 
-    #description p {
-        font-size: 1.1rem;
-        padding: 1.2rem;
-    }
+  .quadro h2 {
+    font-size: 2rem;
+  }
 
-    .start {
-        font-size: 2rem;
-        padding: 1.2rem 2.5rem;
-    }
+  .quadro p {
+    font-size: 1.1rem;
+  }
 
-    .quadro {
-        padding: 2.5rem;
-        border-radius: 50px;
-    }
-
-    .quadro h1 {
-        font-size: 3.5rem;
-    }
-
-    .quadro h2 {
-        font-size: 3rem;
-    }
-
-    .quadro p {
-        font-size: 1.3rem;
-    }
-
-    .quadro .start {
-        font-size: 1.8rem;
-        padding: 1.2rem 2.5rem;
-    }
-
-    .back-button {
-        padding-top: 0;
-    }
-
-    #back {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-        border-radius: 1.5rem;
-        box-shadow: 2px 2px black;
-    }
+  .quadro .start {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
 }
 
-/* Notebooks (largura entre 1025px e 1920px) - Título alinhado à esquerda */
+/* Notebooks (largura entre 1025px e 1920px) */
 @media only screen and (min-width: 1025px) and (max-width: 1920px) {
-    main {
-        padding: 2.5rem;
-    }
-
-    header {
-        padding: 0.6rem 1.2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header-left {
-        display: flex;
-        align-items: center;
-    }
-
-    #UFMS-DIV {
-        margin-left: 0.5rem;
-    }
-
-    #UFMS {
-        font-size: 1.1rem;
-    }
-
-    #UFMS-LOGO-DIV {
-        margin-right: 0.9rem;
-    }
-
-    #UFMS-LOGO{
-        max-width: 90px;
-    }
-
-    .back-button {
-        /* Estilos do botão para notebook */
-    }
-
-    #back {
-        font-size: 0.9rem;
-        padding: 0.6rem 1.2rem;
-        border-radius: 2rem;
-        box-shadow: 3px 3px black;
-    }
+  main {
+    padding: 2rem;
+  }
+  .quadro {
+    margin-top: 4rem; /* Adjusted for fixed header */
+  }
+  header {
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #UFMS-DIV {
+    margin-left: 0.5rem;
+  }
+  #UFMS {
+    font-size: 1.1rem;
+  }
+  #UFMS-LOGO-DIV {
+    margin-right: 0.9rem;
+    max-width: 90px;
+    min-width: auto;
+    width: auto;
+  }
+  #UFMS-LOGO {
+    max-width: 90px;
+  }
+  #back {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    box-shadow: 3px 3px black;
+  }
 }
 
-/* Desktops Maiores (largura acima de 1920px) */
+/* Desktops Maiores (largura acima de 1921px) */
 @media only screen and (min-width: 1921px) {
-    main {
-        padding: 4rem;
-    }
-
-    header {
-        padding: 2rem 4rem;
-    }
-
-    #UFMS {
-        font-size: 3rem;
-    }
-
-    #title h1 {
-        font-size: 6rem;
-    }
-
-    #description p {
-        font-size: 1.8rem;
-        padding: 3rem;
-    }
-
-    .start {
-        font-size: 3.5rem;
-        padding: 2.5rem 5rem;
-    }
-
-    .quadro {
-        padding: 5rem;
-        border-radius: 100px;
-    }
-
-    .quadro h1 {
-        font-size: 6rem;
-    }
-
-    .quadro h2 {
-        font-size: 5.5rem;
-    }
-
-    .quadro p {
-        font-size: 2.2rem;
-    }
-
-    .quadro .start {
-        font-size: 3rem;
-        padding: 2.5rem 5rem;
-    }
-
-    .back-button {
-        padding-top: 4rem;
-    }
-
-    #back {
-        font-size: 2.5rem;
-        padding: 2rem 4rem;
-        border-radius: 3rem;
-        box-shadow: 5px 5px black;
-    }
+  main {
+    padding: 4rem;
+  }
+  .quadro {
+    margin-top: 4rem;
+  }
+  header {
+    padding: 2rem 4rem;
+  }
+  #UFMS {
+    font-size: 3rem;
+  }
+  #UFMS-LOGO-DIV {
+    width: auto;
+    min-width: auto;
+    max-width: auto;
+  }
+  #UFMS-LOGO {
+    max-width: 90px; /* Ensure a reasonable max-width */
+  }
+  #back {
+    font-size: 2.5rem;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    box-shadow: 5px 5px black;
+  }
 }

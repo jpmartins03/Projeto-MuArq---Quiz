@@ -1,3 +1,6 @@
+const correctSound = new Audio('./assets/sounds/correct.mp3');
+const wrongSound = new Audio('./assets/sounds/wrong-47985.mp3');
+
 const questions = [
     {
         // Questão 01
@@ -6,19 +9,18 @@ const questions = [
             "espanhóis navegadores", "vikings guerreiros navegadores"],
         correct: 1, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/1.png"
-        
+
     },
     {
         // Questão 02
-        question: "Um dos aspectos mais notáveis da vida humana no período pré-histórico foram as pinturas nas cavernas. Este tipo de pintura mereceu inúmeros estudos acerca do significado dessa expressão artística. Essa pintura é conhecida como...",
+        question: "Como são conhecidas as pinturas pré-históricas encontradas nas cavernas?",
         options: ["Pintura clássica", "Pintura moderna", "Pintura rupestre", "Pintura impressionista", "Pintura gótica"],
         correct: 2, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/2.png"
     },
     {
-        // Questão 03 
-        // Tem que arrumar
-        question: "Qual é o período em que os seres humanos aprenderam as técnicas de lascar rochas portanto, produziram seus instrumentos como lanças, facas, lesmas e pontas de flechas conhecidos como tecnologia lítica.",
+        // Questão 03
+        question: "Qual período da pré-história é marcado pela tecnologia de lascar rochas para produzir instrumentos como lanças e flechas?",
         options: ["Idade Antiga","Idade da Pedra Lascada","Idade da Pedra Polida","Idade Média","Idade do Metais"],
         correct: 1, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/3.png"
@@ -27,22 +29,21 @@ const questions = [
         // Questão 04
         question: "Assinale a alternativa incorreta:",
         options: ["Os potes de cerâmica indígena serviam para guardar alimentos", "Os potes de cerâmica indígena serviam para cozinhar alimentos",
-             "Os potes de cerâmica indígena serviam para guardar os ossos de pessoas mortas", "Os potes de cerâmica indígena serviam para colocar as crianças de castigo", "Os potes de cerâmica indígena serviam para guardar bebidas "],
+            "Os potes de cerâmica indígena serviam para guardar os ossos de pessoas mortas", "Os potes de cerâmica indígena serviam para colocar as crianças de castigo", "Os potes de cerâmica indígena serviam para guardar bebidas "],
         correct: 3, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/4.png"
     },
     {
         // Questão 05
-        question: "Como os primeiros humanos que chegaram no território onde hoje é Mato Grosso do Sul viviam?",
+        question: "Como viviam os primeiros humanos no território que hoje é Mato Grosso do Sul?",
         options: ["Iam ao supermercado comprar sua própria comida", "Caçavam animais e coletavam frutos e legumes para comer", "Faziam grandes plantações e pastoreio de animais",
-             "Enviavam WhatsApp para aplicativos como “IFOOD” e pediam seus alimentos", "Trocavam pedras preciosas por alimentos com outros povos."],
+            "Enviavam WhatsApp para aplicativos como “IFOOD” e pediam seus alimentos", "Trocavam pedras preciosas por alimentos com outros povos."],
         correct: 1, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/5.png"
     },
     {
         // Questão 06
-        // Tem que arrumar
-        question: "Qual é o significado da palavra nômade?",
+        question: "O que significa a palavra 'nômade'?",
         options: ["Que as pessoas não possuem habitação fixa e se alimentavam daquilo que a natureza podia lhes oferecer", "Pessoas que plantavam, colhiam e construíam suas próprias casas de barro",
             "O mesmo que sedentarismo, que as pessoas ficavam morando em um só lugar e faziam suas casas", "Que eram cuidadores de grandes rebanhos de mamutes e comerciantes da Pré-história",
             "Pessoas que viajavam de ônibus na Pré-história",
@@ -52,22 +53,21 @@ const questions = [
     },
     {
         // Questão 07
-        question: "Quando esses povos pré-históricos chegaram ao território que hoje conhecemos como  Mato Grosso do Sul?",
+        question: "Quando esses povos pré-históricos chegaram ao território que hoje conhecemos como  Mato Grosso do Sul?",
         options: ["Há mais de 10 mil anos", " Há mais de 11.990.000 anos", " Há menos de 6.000 anos ", " Há menos de 3.000 anos ", "Há quase 1.500 anos"],
         correct: 0, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/7.png"
     },
     {
         // Questão 08
-        // Tem que arrumar
-        question: "Quais objetos os povos indígenas ceramistas agricultores não produziam de argila?",
-         options: ["potes para guardar farinha e líquidos", "travessas, panelas, pratos", "adornos corporais como colares", "peças para rituais e urnas funerárias", "garfos, colheres e facas de metal"],
+        question: "Qual destes objetos não era produzido de argila pelos povos indígenas ceramistas agricultores?",
+        options: ["potes para guardar farinha e líquidos", "travessas, panelas, pratos", "adornos corporais como colares", "peças para rituais e urnas funerárias", "garfos, colheres e facas de metal"],
         correct: 4, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/8.png"
     },
     {
         // Questão 09
-        question: "Por que alguns dos potes que estão no museu são expostos quebrados?",
+        question: "Por que alguns potes do museu são exibidos quebrados?",
         options: ["Para revelar informações sobre o passado e ao remontá-los pode-se saber mais informações sobre os habitantes antigos, o formato dos potes, seus desenhos, suas cores",
             "Para alertar as pessoas que tomem cuidado com os potes, pois são frágeis e quebram ao cair",
             "Para mostrar como se cola potes para os visitantes do museu",
@@ -79,12 +79,12 @@ const questions = [
     },
     {
         // Questão 10
-        question: "Como eram feitos os potes cerâmicos na pré-história de Mato Grosso do Sul pelos povos indígenas?",
+        question: "Como os povos indígenas de Mato Grosso do Sul faziam seus potes cerâmicos na pré-história?",
         options: ["Eram feitos nas fábricas localizadas nas tribos",
-             "Eram feitas de argila, um tipo especial de barro, moldadas a mão ou no formato de “cobrinhas” decoradas com as unhas, dedos, sabugos de milho, pinturas e queimadas ",
-              "Eram feitas de vidro e plantas da época e pintadas com tinta acrílica",
-               "Vinham da Europa para o Brasil trazidas pelos portugueses em caravelas",
-                "Vinham prontas de outros países da América do Sul, pois no Brasil não se produzia cerâmicas"],
+            "Eram feitas de argila, um tipo especial de barro, moldadas a mão ou no formato de “cobrinhas” decoradas com as unhas, dedos, sabugos de milho, pinturas e queimadas ",
+            "Eram feitas de vidro e plantas da época e pintadas com tinta acrílica",
+            "Vinham da Europa para o Brasil trazidas pelos portugueses em caravelas",
+            "Vinham prontas de outros países da América do Sul, pois no Brasil não se produzia cerâmicas"],
         correct: 1, // Índice da resposta correta
         image: "./assets/assets-quiz/drive-download-20250120T155620Z-001/10.png"
 
@@ -122,8 +122,8 @@ function selectAnswer(selectedIndex) {
 
     // Se houver um botão previamente selecionado, remove o estilo
     if (selectedButton) {
-        selectedButton.style.backgroundColor = "";  // Remove a cor de fundo
-        selectedButton.style.color = "";  // Remove a cor do texto
+        selectedButton.style.backgroundColor = "";  // Remove a cor de fundo
+        selectedButton.style.color = "";  // Remove a cor do texto
         selectedButton.style.transform = ""; // Deixa o botão no tamanho normal novamente
     }
 
@@ -139,7 +139,7 @@ function selectAnswer(selectedIndex) {
 }
 
 
-function showQuestion() {    
+function showQuestion() {    
     bodyEl.style = "";
     const currentQuestion = questions[currentQuestionIndex];
     questionEl.textContent = currentQuestion.question;
@@ -201,26 +201,43 @@ function isAnswered () {
 }
 function nextQuestion() {
     isAnswered();
-    // Verifica se o índice da questão é válido
+    // Verifica se uma resposta foi selecionada
     if (selectedButton) {
         // Verifica se a resposta está correta
         const correctIndex = questions[currentQuestionIndex].correct;
         const isCorrect = selectedAnswerIndex === correctIndex;
         const correctButton = document.querySelectorAll("#options button")[correctIndex];
-        
+
         if (isCorrect) {
-            score++; // Incrementa o score apenas aqui
+            score++; // Incrementa o score
         }
 
-        // Mostra o feedback
+        // Mostra o feedback visual e sonoro
         showFeedback(isCorrect, selectedButton, correctButton);
+
+        // --- INÍCIO DA MODIFICAÇÃO DIDÁTICA ---
+
+        // Define um tempo de espera diferente com base se a resposta está correta ou errada
+        let delayTime;
+
+        if (isCorrect) {
+            // Se a resposta for correta, espera 1.5 segundos
+            delayTime = 1500; 
+        } else {
+            // Se a resposta for errada, espera 4 segundos para dar tempo ao aluno de ler a resposta certa
+            delayTime = 3000; 
+        }
+
+        // --- FIM DA MODIFICAÇÃO DIDÁTICA ---
+
+
         // Reseta as variáveis de seleção
         selectedButton = null;
         selectedAnswerIndex = null;
 
 
-         // Avança para a próxima questão após 4 segundos
-         setTimeout(() => {
+        // Avança para a próxima questão APÓS O TEMPO DEFINIDO (delayTime)
+        setTimeout(() => {
             currentQuestionIndex++;
             if (currentQuestionIndex < questions.length) {
                 cleanNextButton();
@@ -229,11 +246,10 @@ function nextQuestion() {
                 bodyEl.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/img/home_photo.png)";
                 endQuiz();
             }
-        }, 1500);
+        }, delayTime); // Usamos a variável 'delayTime' aqui
 
     }
 }
-
 function cleanNextButton() {
     const nextBtnContainer = document.querySelector(".next-question");
     if (nextBtnContainer) {
@@ -288,9 +304,9 @@ function adjustButtonSizes() {
     const buttons = document.querySelectorAll('#options button');
     // const maxHeight = Math.max(...Array.from(buttons).map(button => button.offsetHeight));
     const maxWidth = Math.max(...Array.from(buttons).map(button => button.offsetWidth));
-    
+
     buttons.forEach(button => {
-    //   button.style.height = `${maxHeight}px`;
-      button.style.width = `${maxWidth}px`;
+        //   button.style.height = `${maxHeight}px`;
+        button.style.width = `${maxWidth}px`;
     });
-  }
+}
